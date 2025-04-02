@@ -1,0 +1,218 @@
+/*css reset rule*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#aboutMe {
+
+	font-family: Montserrat;
+	font-weight: 700;
+	font-size: 68px;
+	line-height: 84px;
+	letter-spacing: 0px;
+	text-align: center;
+	vertical-align: middle;
+	color: #FFFFFF;
+
+}
+
+#aboutMeP {
+
+	font-family: Montserrat;
+	font-weight: 400;
+	font-size: 30px;
+	line-height: 35px;
+	letter-spacing: 0px;
+	text-align: center;
+	vertical-align: middle;
+	color: #FFFFFF;
+
+}
+
+nav > div > div > div > a {
+
+	font-family: Montserrat;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 24px;
+	letter-spacing: 0%;
+	color: #003363 !important;
+
+}
+
+#landing {
+	
+	background: 
+
+	linear-gradient(
+
+		rgba(0, 34, 65, 0.61),
+		rgba(0, 34, 65, 0.61)
+	),
+
+	url("./images/workspace.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	;
+}
+
+#myProject {
+
+	font-family: Montserrat;
+	font-weight: 700;
+	font-size: 68px;
+	line-height: 84px;
+	letter-spacing: 0px;
+	text-align: center;
+	vertical-align: middle;
+	color: #003363;
+
+}
+
+#myTools {
+
+	font-family: Montserrat;
+	font-weight: 700;
+	font-size: 68px;
+	line-height: 84px;
+	letter-spacing: 0px;
+	text-align: center;
+	vertical-align: middle;
+	color: #003363;
+
+}
+
+#headingContact {
+
+	font-family: Montserrat;
+	font-weight: 700;
+	font-size: 68px;
+	line-height: 84px;
+	letter-spacing: 0px;
+	text-align: center;
+	vertical-align: middle;
+	color: #FFFFFF;
+
+}
+
+#contact{
+
+	background: 
+
+	linear-gradient(
+
+		rgba(0, 34, 65, 0.61),
+		rgba(0, 34, 65, 0.61)
+	),
+
+	url("./images/workspace2.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	;
+}
+
+.card {
+
+	width: 18rem;
+
+}
+
+.card {
+
+	width: 18rem;
+
+}
+
+/*start of cards glow on hover*/
+
+.card-style {
+	padding: 15px 30px;
+	border-radius: 10px;
+	box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+	transition: all 0.3s ease;
+	position: relative;
+	overflow: hidden;
+}
+
+.card-style:hover {
+	box-shadow: 0 0 20px rgba(0, 0, 255, 0.8), 0 0 40px rgba(0, 0, 255, 0.6);
+}
+
+.card-style:hover::before {
+	width: 150%;
+	height: 150%;
+}
+
+.card-style::before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 400%;
+	height: 400%;
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/*end of cards glow on hover*/
+
+/*start of text changer*/
+
+.text-changer {
+	height: 60px;
+	padding: 10px;
+	border-radius: 8px;
+	display: flex;
+	font-family: Montserrat;
+	font-weight: 400;
+	font-size: 30px;
+	text-align: center;
+	vertical-align: middle;
+	color: #FFFFFF;
+}
+
+.intro-text {
+	margin-top: -2px;
+
+}
+
+.roles-container {
+	overflow: hidden;
+	position: relative;
+}
+
+.role {
+	display: block;
+	height: 100%;
+	padding-left: 6px;
+	color: #956afa;
+	animation: role-change 4s infinite;
+}
+
+@keyframes role-change {
+	10% {
+		transform: translateY(-102%);
+	}
+	25% {
+		transform: translateY(-100%);
+	}
+	40% {
+		transform: translateY(-202%);
+	}
+	60% {
+		transform: translateY(-200%);
+	}
+	80% {
+		transform: translateY(-302%);
+	}
+	100% {
+		transform: translateY(-300%);
+	}
+}
+
+
+/*end of text changer*/
