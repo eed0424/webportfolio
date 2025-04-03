@@ -49,8 +49,8 @@ nav > div > div > div > a {
 
 	linear-gradient(
 
-		rgba(0, 34, 65, 0.61),
-		rgba(0, 34, 65, 0.61)
+		rgba(0, 34, 65, 1.0),
+		rgba(0, 34, 65, 1.0)
 	),
 
 	url("./images/workspace.jpg");
@@ -98,7 +98,7 @@ nav > div > div > div > a {
 
 }
 
-#contact{
+.contact{
 
 	background: 
 
@@ -160,59 +160,63 @@ nav > div > div > div > a {
 
 /*end of cards glow on hover*/
 
-/*start of text changer*/
+/*start of text typing animation*/
 
-.text-changer {
-	height: 60px;
-	padding: 10px;
-	border-radius: 8px;
-	display: flex;
-	font-family: Montserrat;
+.wrapper {
+	display: inline-flex;
+}
+
+.wrapper .static-txt {
+	color: #fff;
+	font-size: 60px;
 	font-weight: 400;
-	font-size: 30px;
-	text-align: center;
-	vertical-align: middle;
-	color: #FFFFFF;
 }
 
-.intro-text {
-	margin-top: -2px;
-
-}
-
-.roles-container {
+.wrapper .dynamic-txts {
+	margin-left: 15px;
+	height: 90px;
+	line-height: 90px;
 	overflow: hidden;
+}
+
+.dynamic-txts li {
+	color: #FC6D6D;
+	list-style: none;
+	font-size: 60px;
+	font-weight: 500;
+	position: relative;
+	top: 0;
+	animation: slide 6s steps(4) infinite;
+}
+
+@keyframes slide {
+	100% {
+		top: -360px;
+	}
+}
+
+.dynamic-txts li span {
 	position: relative;
 }
 
-.role {
-	display: block;
+.dynamic-txts li span::after {
+	content: '';
+	position: absolute;
+	left: 0;
 	height: 100%;
-	padding-left: 6px;
-	color: #956afa;
-	animation: role-change 4s infinite;
+	width: 100%;
+	background: rgba(0, 34, 65, 1.0);
+	border-left: 2px solid #FC6D6D;
+	animation: typing 1.5s steps(8) infinite;
 }
 
-@keyframes role-change {
-	10% {
-		transform: translateY(-102%);
-	}
-	25% {
-		transform: translateY(-100%);
-	}
-	40% {
-		transform: translateY(-202%);
-	}
-	60% {
-		transform: translateY(-200%);
-	}
-	80% {
-		transform: translateY(-302%);
-	}
+@keyframes typing {
 	100% {
-		transform: translateY(-300%);
+		left: 100%;
+		margin: 0 -35px 0 35px;
 	}
 }
+/*end of text typing animation*/
 
 
-/*end of text changer*/
+
