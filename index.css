@@ -98,7 +98,7 @@ nav > div > div > div > a {
 
 }
 
-#contact{
+.contact{
 
 	background: 
 
@@ -203,11 +203,11 @@ nav > div > div > div > a {
 	content: '';
 	position: absolute;
 	left: 0;
-	height: 110%;
+	height: 100%;
 	width: 100%;
 	background: rgba(0, 34, 65, 1.0);
 	border-left: 2px solid #FC6D6D;
-	animation: typing 1.5s steps(10) infinite;
+	animation: typing 1.5s steps(8) infinite;
 }
 
 @keyframes typing {
